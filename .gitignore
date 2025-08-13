@@ -1,0 +1,25 @@
+# Python
+__pycache__/
+*.pyc
+
+# Env / Secrets
+.env
+.venv/
+
+# Data & Models (Git管理しない)
+data/raw/
+data/interim/
+weights/
+outputs/
+
+# Jupyter
+.ipynb_checkpoints/
+
+#画像データは著作権の関係でGit管理しない
+
+*.jpg
+*.jpeg
+*.png
+
+*.txt
+!requirements.txt
