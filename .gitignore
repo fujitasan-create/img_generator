@@ -25,3 +25,4 @@ outputs/
 !requirements.txt
 
 .yaml
+configs/
