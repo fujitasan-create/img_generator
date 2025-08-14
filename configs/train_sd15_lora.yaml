@@ -2,14 +2,16 @@ base_model: runwayml/stable-diffusion-v1-5
 resolution: 512
 train_batch_size: 1
 gradient_accumulation_steps: 8
-max_train_steps: 2000
+max_train_steps: 1600
 learning_rate: 1e-4
 dataset:
   images_dir: data/processed/images
   captions_dir: data/processed/captions
 lora:
-  r: 8
+  r: 16
   alpha: 16
   dropout: 0.05
-output_dir: weights/sd15/lora
+output_dir: weights/sd15/lora_jp
 seed: 42
+
+checkpointing_steps: 400

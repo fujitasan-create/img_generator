@@ -1,0 +1,16 @@
+out_dir: data/raw/jp_women
+engine: bing
+keywords:
+  - "日本人 女性 ポートレート"
+  - "Japanese woman portrait"
+  - "黒髪 ボブ 前髪 日本人"
+  - "黒髪 ストレート ポートレート 日本人"
+  - "asian woman black bob portrait"
+bing_filters:
+  type: "photo"          # photo / clipart / lineart など
+  color: "color"         # color / bw
+  size: "large"          # large / medium
+  people: "portrait"     # people-only検索（icrawler拡張に合わせて）
+limit_per_kw: 150        # キーワード毎の目安
+min_width: 512
+min_height: 512

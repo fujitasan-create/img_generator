@@ -1,0 +1,17 @@
+base_model: runwayml/stable-diffusion-v1-5
+vae: null               # 特殊なVAEがなければ null
+lora:
+  path: weights/sd15/lora      # あなたのLoRA保存先
+  rank: 16                      # 学習時のrank（不明ならそのままでOK）
+  alpha: 16
+  scale: 0.8                    # 効き具合(0.6~1.0で調整)
+scheduler: ddim                 # または euler_a / dpm++
+seed: 42                        # 再現性のための固定seed
+width: 512
+height: 512
+num_inference_steps: 30         # 20~40推奨
+guidance_scale: 7.5             # 6.5~8.0から調整
+negative_prompt: "low quality, worst quality, blurry, watermark, text"
+output_dir: outputs/samples
+device: cuda
+precision: fp16
